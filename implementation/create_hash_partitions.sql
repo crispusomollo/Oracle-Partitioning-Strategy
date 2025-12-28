@@ -1,0 +1,4 @@
+ALTER TABLE session_logs
+PARTITION BY HASH (user_id)
+PARTITIONS 16;
+
